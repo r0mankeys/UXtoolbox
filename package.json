@@ -1,0 +1,23 @@
+{
+    "name": "uxtoolbox",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon api/server.js",
+        "pretty": "prettier --write .",
+        "lint": "npx eslint ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.21.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.12.0",
+        "eslint": "^9.12.0",
+        "prettier": "3.3.3"
+    }
+}

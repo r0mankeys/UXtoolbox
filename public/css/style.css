@@ -1,0 +1,66 @@
+@import url('reset.css');
+@import url('utils.css');
+
+:root {
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+body.dark {
+    --main-bg-color: hsl(0, 0%, 23%);
+    --accent-bg-color: hsl(0, 0%, 17%);
+    --main-accent-color: hsl(224, 100%, 58%);
+    --main-text: hsl(0, 0%, 94%);
+}
+
+body.light {
+    --main-bg-color: hsl(0, 0%, 93%);
+    --accent-bg-color: hsl(0, 0%, 100%);
+    --main-accent-color: hsl(224, 74%, 39%);
+    --main-text: hsl(0, 0%, 16%);
+}
+
+@font-face {
+    font-family: 'Lexeda Deca';
+    font-weight: 400;
+    src: url(../assets/fonts/LexendDeca-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lexeda Deca';
+    font-weight: 500;
+    src: url(../assets/fonts/LexendDeca-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lexeda Deca';
+    font-weight: 700;
+    src: url(../assets/fonts/LexendDeca-Bold.woff) format('woff');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    color: var(--main-text);
+    font-size: var(--base-font-size);
+    font-family: 'Lexeda Deca', sans-serif;
+}
+
+header.nav {
+    padding-inline: var(--space2);
+    padding-block: var(--space-2);
+    background-color: var(--accent-bg-color);
+    box-shadow: var(--shadow);
+}
+
+h1.logo {
+    inline-size: fit-content;
+    font-size: var(--text-size2);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+main.main-content {
+    background-color: rgb(181, 181, 228);
+    flex-grow: 1;
+}
