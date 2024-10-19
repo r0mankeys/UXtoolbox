@@ -11,18 +11,55 @@
         <link rel="stylesheet" href="../css/style.css" />
         <title>UXtoolbox</title>
     </head>
-    <body class="light">
+    <body class="dark">
         <header class="nav">
             <h1 class="logo">UXtoolbox</h1>
         </header>
-        <main class="main-content">
-            <section class="hero center box-normal">
+        <main class="main-content stack-large">
+            <section class="hero center">
                 <h2 class="hero-title">
                     A collection of UX features I like
                     <span class="embarassing"
                         >(and sometimes get stuck on)</span
                     >
                 </h2>
+            </section>
+            <section class="page-grid cluster">
+                <article class="page-preview box-normal stack-small">
+                    <h3 class="page-preview-title">Loading Page</h3>
+                    <p class="page-preview-description">
+                        A page to act as an intermediary when there is a page
+                        with some demanding content loading, when the files are
+                        ready it should switch to the intended page
+                    </p>
+                    <a class="page-preview-link" href="/loading">View here</a>
+                </article>
+                <article class="page-preview box-normal stack-small">
+                    <h3 class="page-preview-title">Loading Page (Skeleton)</h3>
+                    <p class="page-preview-description">
+                        Similar to the loading page but with a pulsing skeleton
+                        (like youtube) that shows the basic layout of the
+                        content that awaits
+                    </p>
+                    <a class="page-preview-link" href="/skeleton">View here</a>
+                </article>
+                <article class="page-preview box-normal stack-small">
+                    <h3 class="page-preview-title">Scroll Spy Navigation</h3>
+                    <p class="page-preview-description">
+                        A way for the user to know where they are on the page by
+                        a dynamcally updating navigation table of contents
+                    </p>
+                    <a href="/scroll" class="page-preview-link">View here</a>
+                </article>
+                <article class="page-preview box-normal stack-small">
+                    <h3 class="page-preview-title">Search</h3>
+                    <p class="page-preview-description">
+                        Real time search on ready data (could also work on data
+                        needed to be fetched which could then be cached, but
+                        seems like way too many network requests)
+                    </p>
+                    <a href="/search" class="page-preview-link">View here</a>
+                </article>
             </section>
         </main>
     </body>

@@ -12,6 +12,28 @@ app.get('/', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, '../public/pages/home.html'))
 })
 
+app.get('/loading', (req, res) => {
+    res.status(200).sendFile(
+        path.join(__dirname, '../public/pages/loading.html')
+    )
+})
+
+app.get('/skeleton', (req, res) => {
+    res.status(200).sendFile(
+        path.join(__dirname, '../public/pages/skeleton.html')
+    )
+})
+
+app.get('/search', (req, res) => {
+    res.status(200).sendFile(
+        path.join(__dirname, '../public/pages/search.html')
+    )
+})
+
+app.get("/scroll", (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "../public/pages/scrollspy.html"));
+})
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`)
 })

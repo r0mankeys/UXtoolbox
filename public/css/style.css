@@ -61,6 +61,37 @@ h1.logo {
 }
 
 main.main-content {
-    background-color: rgb(181, 181, 228);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
     flex-grow: 1;
+}
+
+main.main-content > * {
+    max-inline-size: 60ch;
+    margin-inline: auto;
+}
+
+section.hero {
+    text-align: center;
+    margin-block-start: var(--space3);
+}
+
+section.page-grid {
+    margin-block: var(--space4);
+    justify-content: center;
+    gap: var(--space3);
+}
+
+article.page-preview {
+    background-color: var(--accent-bg-color);
+    flex-basis: 20rem;
+    flex-shrink: 1;
+    box-shadow: var(--shadow);
+}
+
+a.page-preview-link {
+    display: block;
+    color: var(--main-accent-color);
+    inline-size: fit-content;
 }
