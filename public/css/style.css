@@ -46,7 +46,7 @@ body {
     font-family: 'Lexeda Deca', sans-serif;
 }
 
-header.nav {
+header.nav, nav.banner {
     padding-inline: var(--space2);
     padding-block: var(--space-2);
     background-color: var(--accent-bg-color);
@@ -95,3 +95,37 @@ a.page-preview-link {
     color: var(--main-accent-color);
     inline-size: fit-content;
 }
+
+/* Sub-Pages */
+
+a.back-home {
+    display: block;
+    text-decoration: none;
+    color: var(--main-accent-color);
+    inline-size: fit-content;
+}
+
+/* Loading */
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: #dbdcef;
+    border-right-color: #474bff;
+    animation: spinner-d3wgkg 1s infinite linear;
+ }
+ 
+ @keyframes spinner-d3wgkg {
+    to {
+       transform: rotate(1turn);
+    }
+ }
+
+ .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+ }

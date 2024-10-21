@@ -8,9 +8,17 @@
             href="../assets/favicon.svg"
             type="image/x-icon"
         />
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/loading.js" defer></script>
         <title>Loading</title>
     </head>
-    <body>
-        <a href="/">Back to home</a>
+    <body class="light">
+        <nav class="banner">
+            <a class="back-home" href="/">&#8592; Back to home</a>
+        </nav>
+        <div id="loading" class="screen">
+            <div class="spinner"></div>
+        </div>
+        <div class="screen" id="main" style="display: none;">My main content ✅</div>
     </body>
 </html>
