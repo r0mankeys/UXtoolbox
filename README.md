@@ -20,3 +20,7 @@ touch .env && echo "PORT=<port>\nHOST=<host>" > .env
 
 - [ ] Deploy MVP
 - [ ] Create a component (or component tree) for the Loading Screen
+
+## Problems
+
+- [ ] Serving the static files (favicon.svg) upon deployment
