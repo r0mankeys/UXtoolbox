@@ -7,6 +7,6 @@ import app from "./index.tsx"
 
 dotenv.config()
 
-app.use(serveStatic({ root: join(dirname(import.meta.url), "assets") }));
+app.use(serveStatic({ root: join(dirname(import.meta.url), "/assets") }));
 
 Deno.serve({ hostname: String(process.env.HOST), port: Number(process.env.PORT) }, app.fetch)
