@@ -1,0 +1,61 @@
+{
+  "remote": {},
+  "version": "4",
+  "specifiers": {
+    "jsr:@hono/hono@^4.6.9": "4.6.9",
+    "npm:@twind/core@*": "1.1.3",
+    "npm:@twind/preset-autoprefix@*": "1.0.7_@twind+core@1.1.3",
+    "npm:@twind/preset-tailwind@*": "1.1.4_@twind+core@1.1.3",
+    "npm:@types/node@*": "22.5.4",
+    "npm:dotenv@*": "16.4.5"
+  },
+  "jsr": {
+    "@hono/hono@4.6.9": {
+      "integrity": "4d4975f5c023d4416d26e6dd4a498c56e59958561733f56f55a9be57f023603b"
+    }
+  },
+  "npm": {
+    "@twind/core@1.1.3": {
+      "integrity": "sha512-/B/aNFerMb2IeyjSJy3SJxqVxhrT77gBDknLMiZqXIRr4vNJqiuhx7KqUSRzDCwUmyGuogkamz+aOLzN6MeSLw==",
+      "dependencies": [
+        "csstype"
+      ]
+    },
+    "@twind/preset-autoprefix@1.0.7_@twind+core@1.1.3": {
+      "integrity": "sha512-3wmHO0pG/CVxYBNZUV0tWcL7CP0wD5KpyWAQE/KOalWmOVBj+nH6j3v6Y3I3pRuMFaG5DC78qbYbhA1O11uG3w==",
+      "dependencies": [
+        "@twind/core",
+        "style-vendorizer"
+      ]
+    },
+    "@twind/preset-tailwind@1.1.4_@twind+core@1.1.3": {
+      "integrity": "sha512-zv85wrP/DW4AxgWrLfH7kyGn/KJF3K04FMLVl2AjoxZGYdCaoZDkL8ma3hzaKQ+WGgBFRubuB/Ku2Rtv/wjzVw==",
+      "dependencies": [
+        "@twind/core"
+      ]
+    },
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "csstype@3.1.3": {
+      "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
+    },
+    "dotenv@16.4.5": {
+      "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
+    },
+    "style-vendorizer@2.2.3": {
+      "integrity": "sha512-/VDRsWvQAgspVy9eATN3z6itKTuyg+jW1q6UoTCQCFRqPDw8bi3E1hXIKnGw5LvXS2AQPuJ7Af4auTLYeBOLEg=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.6.9"
+    ]
+  }
+}
