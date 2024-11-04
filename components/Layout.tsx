@@ -3,6 +3,7 @@ import { html } from 'hono/html';
 import type { HtmlEscapedString } from "hono/utils/html";
 
 interface LayoutProps {
+    pageTitle: string,
     children: Promise<HtmlEscapedString> | ReactNode
 }
 
@@ -11,7 +12,7 @@ const Layout: FC<LayoutProps> = (props) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>UXtoolbox</title>
+        <title>${props.pageTitle}</title>
         <link rel="icon" href="/assets/favicon.svg" />
         <script src="https://cdn.twind.style"></script>
       </head>
