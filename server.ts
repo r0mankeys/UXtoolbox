@@ -2,6 +2,6 @@ import { serveStatic } from 'hono/deno'
 
 import app from "./index.tsx"
 
-app.use(serveStatic({ root: "/assets" }))
+app.use(serveStatic({ root: "/" }))
 
 Deno.serve(app.fetch)
