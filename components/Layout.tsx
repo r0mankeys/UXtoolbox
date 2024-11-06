@@ -1,5 +1,5 @@
 import type { FC, ReactNode  } from 'hono/jsx'
-import { html } from 'hono/html';
+import { html, raw } from 'hono/html';
 import type { HtmlEscapedString } from "hono/utils/html";
 
 interface LayoutProps {
@@ -18,7 +18,7 @@ const Layout: FC<LayoutProps> = (props) => {
     <html>
       <head>
         <title>${props.pageTitle}</title>
-        <link rel="icon" href=${svg}/>
+        <link rel="icon" href=${raw(svg)}/>
         <script src="https://cdn.twind.style"></script>
       </head>
       <body class="bg-gray-50 text-zinc-900 dark:bg-zinc-900 dark:text-slate-200">
