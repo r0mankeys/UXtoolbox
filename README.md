@@ -16,9 +16,22 @@ clone the repository and run the following command in the terminal:
 touch .env && echo "PORT=<port>\nHOST=<host>" > .env
 ```
 
+then make the `server.ts` file look similar to the following
+
+```typescript
+import dotenv from "npm:dotenv";
+import process from "node:process"
+
+import app from "./index.tsx"
+
+dotenv.config()
+
+Deno.serve({ hostname: String(process.env.HOST), port: Number(process.env.PORT) }, app.fetch)
+```
+
 ## Goals
 
-- [ ] Deploy MVP
+- [x] Deploy MVP
 - [ ] Create a component (or component tree) for the Loading Screen
 
 ## Problems
