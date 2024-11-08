@@ -32,8 +32,8 @@ Deno.serve({ hostname: String(process.env.HOST), port: Number(process.env.PORT) 
 ## Goals
 
 - [x] Deploy MVP
-- [ ] Create a component (or component tree) for the Loading Screen
+- [ ] Create a component with a detailed example for the Loading Screen
 
 ## Problems
 
-- [ ] Serving the static files (favicon.svg) upon deployment
+- [x] Serving the static files (favicon.svg) upon deployment
