@@ -186,7 +186,7 @@ const ErrorHandling: FC = () => {
 
 app.use("/assets/*", serveStatic({ root: "./" }))
 
-app.get("/assets/favicon.svg", serveStatic({ path: "/assets/favicon.svg" }));
+// app.get("/assets/favicon.svg", serveStatic({ path: "/assets/favicon.svg" })); // Successful test hallelujah
 
 app.get(Routes.Home, (c: Context) => {
     return c.html(<Home />);
