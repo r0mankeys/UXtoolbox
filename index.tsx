@@ -1,4 +1,5 @@
 import { Hono, type Context } from 'hono'
+import { serveStatic } from "hono/deno"
 import Layout from "./components/Layout.tsx"
 import Navbar from "./components/Navbar.tsx"
 import { Fragment, type FC, type ReactNode } from 'hono/jsx'
@@ -182,6 +183,10 @@ const ErrorHandling: FC = () => {
         </Layout>
     )
 }
+
+app.use("/assets/*", serveStatic({ root: "./" }))
+
+app.get("/assets/favicon.svg", serveStatic({ path: "/assets/favicon.svg" }));
 
 app.get(Routes.Home, (c: Context) => {
     return c.html(<Home />);
