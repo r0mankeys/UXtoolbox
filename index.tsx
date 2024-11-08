@@ -86,7 +86,7 @@ const NotFound: FC = () => {
 
 const LoadingScreen: FC = () => {
     return (
-        <Layout pageTitle="Loading Screen">
+        <Layout pageTitle={`${projectTitle} | Loading Screen`}>
             <Fragment>
                 <Navbar title={projectTitle} />
                 <MainPageBody
@@ -106,7 +106,7 @@ const LoadingScreen: FC = () => {
 
 const LoadingSkeleton: FC = () => {
     return (
-        <Layout pageTitle="Loading Skeleton">
+        <Layout pageTitle={`${projectTitle} | Loading Skeleton`}>
             <Fragment>
                 <Navbar title={projectTitle} />
                 <MainPageBody
@@ -126,7 +126,7 @@ const LoadingSkeleton: FC = () => {
 
 const ScrollSpyNavigation: FC = () => {
     return (
-        <Layout pageTitle="Scroll Spy Navigation">
+        <Layout pageTitle={`${projectTitle} | Scroll Spy Navigation`}>
             <Fragment>
                 <Navbar title={projectTitle} />
                 <MainPageBody
@@ -146,7 +146,7 @@ const ScrollSpyNavigation: FC = () => {
 
 const Pagination: FC = () => {
     return (
-        <Layout pageTitle="Pagination">
+        <Layout pageTitle={`${projectTitle} | Pagination`}>
             <Fragment>
                 <Navbar title={projectTitle} />
                 <MainPageBody
@@ -166,7 +166,7 @@ const Pagination: FC = () => {
 
 const ErrorHandling: FC = () => {
     return (
-        <Layout pageTitle="Error Handling">
+        <Layout pageTitle={`${projectTitle} | Error Handling`}>
             <Fragment>
                 <Navbar title={projectTitle} />
                 <MainPageBody
